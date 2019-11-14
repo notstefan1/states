@@ -75,10 +75,10 @@ function states.keypressed(key, scancode, isrepeat)
    end
 end
 
-function states.keyreleased(key, scancode, isrepeat)
+function states.keyreleased(key, scancode)
    if states.currentState ~= "" then
       if states.states[states.currentState].keyreleased then
-         states.states[states.currentState]:keyreleased(key, scancode, isrepeat)
+         states.states[states.currentState]:keyreleased(key, scancode)
       end
    end
 end
