@@ -4,8 +4,8 @@ states.currentState = ""
 
 function states.init(statetable, startState)
   for k, v in pairs(statetable) do
-    if not states.states[v._NAME] then
-      states.states[v._NAME] = v
+    if not states.states[v.statesNAME] then
+      states.states[v.statesNAME] = v
     end
   end
   if startState then
